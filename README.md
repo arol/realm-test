@@ -18,6 +18,12 @@ Right now it's not possible to completely simulate the NSFRC behaviour because, 
 
 *NSPredicate, Sorting criterias, sections*
 
+Lluís:
+You can either use obejctsWithPredicate:(NSPredicate) or objectsWhere:(NSString) with the format string instead of creating an NSPredicate instance with predicateWithFormat:(NSString).
+Sorting is easy as well with arraySortedByProperty:ascencing:.
+
+I don't like though that this queries return an RLMArray, coupling the model framework with our view controllers (if we create the queries in them like we do with NSFRC).
+
 ### DB Browser
 
 ### JSON Mapping
@@ -29,7 +35,7 @@ Right now it's not possible to completely simulate the NSFRC behaviour because, 
 ### Cascade behaviour
 
 Lluís: 
-No he trobat res al respecte, però ho estic preguntant per reddit a veure si ho pensen afegir o què.
+I haven't found anything related to delete rules like cascade, nullify, etc., but I've asked a Realm developer about it in a Reddit thread. 
 
 ### Optional Fields
 
