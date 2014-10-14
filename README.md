@@ -28,6 +28,9 @@ Right now it's not possible to completely simulate the NSFRC behaviour because, 
 
 ### Cascade behaviour
 
+Lluís: 
+No he trobat res al respecte, però ho estic preguntant per reddit a veure si ho pensen afegir o què.
+
 ### Optional Fields
 
 ### Reverse relationships
