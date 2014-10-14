@@ -11,6 +11,9 @@ Realm Test
 
 *Simulate its behaviour with realm*
 
+Lluís: 
+Right now it's not possible to completely simulate the NSFRC behaviour because, as they say in their "Current Limitations" section, they only support "realm changed" notifications and therefore we can only update the whole table view whenever this notification is fired. They say though that in the NEAR FUTURE they will add fine-grained (core-data-like) notifications allowing to discern between added/removed/moved/updated model objects.
+
 ### Quering
 
 *NSPredicate, Sorting criterias, sections*
