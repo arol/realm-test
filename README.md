@@ -32,6 +32,9 @@ In order to see content changes, you have to reopen the database file.
 
 ### JSON Mapping
 
+Lluís:
+Methods initWithObject: and createInRealm:withObject: allow to instantiate an RLMObject with the values of an NSDictionary if its keys match the object's property names.
+
 ### Testing
 
 *stubs, expectations…*

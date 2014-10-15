@@ -76,19 +76,25 @@
     Player *messi = [Player new];
     [messi setName:@"Lionel Andrés Messi Cuccitini"];
     Club *fcb = [Club new];
-    [fcb setName:@"Futbol Club Barcelona"];
+    [fcb setName:@"FCB"];
     [messi setCurrentClub:fcb];
-    
+
     Player *cristiano = [Player new];
     [cristiano setName:@"Cristiano Ronaldo"];
     Club *rm = [Club new];
-    [rm setName:@"Real Madrid Club de Fútbol"];
+    [rm setName:@"RM"];
     [cristiano setCurrentClub:rm];
     
+    NSDictionary *iniestaJSON = @{
+                                  @"name": @"Iniesta",
+                                  @"currentClub": @{@"name": @"FCB"}
+                                  };
+    Player *iniesta = [[Player alloc] initWithObject:iniestaJSON];
     
     RLMRealm *realm = [RLMRealm defaultRealm];
     [realm transactionWithBlock:^{
         [realm addObjectsFromArray:@[messi, cristiano]];
+        [Player createInDefaultRealmWithObject:iniestaJSON];
     }];
 }
 
