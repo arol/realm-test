@@ -48,6 +48,9 @@ I haven't found anything related to delete rules like cascade, nullify, etc., bu
 
 ### Reverse relationships
 
+Lluís:
+It's not compulsory to define the reverse of each relationship like in core data, but when necessary you have to do explicitely link both relationships (unlike core data) as stated ![in this answer](http://stackoverflow.com/a/24962700).
+
 ### Fullfill issues
 
 ## New features in Realm
