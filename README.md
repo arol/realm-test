@@ -26,6 +26,10 @@ I don't like though that this queries return an RLMArray, coupling the model fra
 
 ### DB Browser
 
+Lluís:
+In order to see content changes, you have to reopen the database file.
+
+
 ### JSON Mapping
 
 ### Testing
